@@ -2,7 +2,7 @@
 
 A comprehensive ROS2 mobile robot package featuring SLAM (Simultaneous Localization and Mapping) and Nav2 (Navigation2) integration for autonomous navigation. This package includes support for multiple sensors (LiDAR, Camera, Depth Camera) and provides complete simulation and visualization capabilities.
 
-## 🚀 Features
+## Features
 
 - **Multi-Sensor Support**: LiDAR, RGB Camera, Depth Camera
 - **SLAM Integration**: Real-time mapping using slam_toolbox
@@ -12,7 +12,7 @@ A comprehensive ROS2 mobile robot package featuring SLAM (Simultaneous Localizat
 - **Teleoperation**: Manual control for testing and mapping
 - **GUI Control Interface**: Web-based GUI for robot control ([turtlebot3_gui](https://github.com/mrithip/turtlebot3_gui))
 
-## 📋 Prerequisites
+## Prerequisites
 
 ### System Requirements
 - Ubuntu 20.04/22.04
@@ -34,7 +34,7 @@ sudo apt install ros-humble-teleop-twist-keyboard
 sudo apt install ros-humble-rviz2
 ```
 
-## 🏗️ Installation and Setup
+## Installation and Setup
 
 ### 1. Clone and Build
 ```bash
@@ -86,7 +86,7 @@ mob_bot/
 └── CMakeLists.txt
 ```
 
-## 🔧 Robot Configuration
+## Robot Configuration
 
 ### Sensor Options
 
@@ -150,7 +150,7 @@ The robot supports three sensor configurations. Modify `robot.urdf.xacro` to ena
 - **Topics**: Various depth-related topics
 - **Message Types**: `sensor_msgs/Image`, `sensor_msgs/PointCloud2`
 
-## 🚀 Running the Robot
+## Running the Robot
 
 ### 1. Basic Simulation (Empty World)
 ```bash
@@ -171,7 +171,7 @@ The launch files automatically use the `obstacles.world` which contains:
 ros2 launch mob_bot rsp.launch.py
 ```
 
-## 📡 Sensor Data Visualization in RViz
+## Sensor Data Visualization in RViz
 
 ### LiDAR Visualization
 ```bash
@@ -225,7 +225,7 @@ rviz2 -d src/mob_bot/config/view_bot.rviz
 rviz2 -d src/mob_bot/config/drive_bot.rviz
 ```
 
-## 🖥️ GUI Control Interface
+## GUI Control Interface
 
 For a user-friendly desktop GUI control interface, use the companion [turtlebot3_gui](https://github.com/mrithip/turtlebot3_gui) repository. This Python-based GUI using PyQt5 provides:
 
@@ -293,7 +293,7 @@ For a user-friendly desktop GUI control interface, use the companion [turtlebot3
 
 The GUI works seamlessly with the mob_bot package and provides an intuitive alternative to keyboard teleoperation for robot control and monitoring.
 
-## 🗺️ SLAM (Simultaneous Localization and Mapping)
+## SLAM (Simultaneous Localization and Mapping)
 
 ### SLAM Workflow Overview
 1. **Mapping Phase**: Drive robot to build map
@@ -361,7 +361,7 @@ Modify the launch file or create a localization launch:
 # Add map_file_name parameter pointing to your saved map
 ```
 
-## 🚁 Autonomous Navigation with Nav2
+## Autonomous Navigation with Nav2
 
 ### Prerequisites
 - Completed SLAM map (saved as `my_map.yaml` and `my_map.pgm`)
@@ -416,7 +416,7 @@ ros2 topic echo /cmd_vel
 - **`drive_bot.rviz`**: Teleoperation interface
 - **`view_bot.rviz`**: General robot monitoring
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -467,7 +467,7 @@ ros2 service list
 ros2 param list /slam_toolbox
 ```
 
-## 📚 Advanced Usage
+## Advanced Usage
 
 ### Custom World Creation
 Create new worlds in `worlds/` directory and modify launch files to use them.
@@ -481,7 +481,7 @@ Modify `nav2_params.yaml` to adjust:
 - Obstacle avoidance sensitivity
 - Path planning algorithms
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -489,11 +489,11 @@ Modify `nav2_params.yaml` to adjust:
 4. Test thoroughly
 5. Submit a pull request
 
-## 📄 License
+## License
 
 This project is licensed under the terms specified in the LICENSE file.
 
-## 📞 Support
+## Support
 
 For issues and questions:
 1. Check the troubleshooting section
