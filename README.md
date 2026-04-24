@@ -178,7 +178,7 @@ ros2 launch mob_bot rsp.launch.py
 # Launch simulation first, then in new terminal:
 rviz2 -d src/mob_bot/config/lidar.rviz
 ```
-<video src="https://github.com/mrithip/mob_bot/raw/main/assets/lidar.mp4" width="100%" controls muted autoplay loop></video>
+![](https://github.com/mrithip/mob_bot/raw/main/assets/lidar.mp4)
 
 **What you'll see:**
 - **Robot Model**: 3D visualization of the robot
@@ -197,7 +197,7 @@ rviz2 -d src/mob_bot/config/lidar.rviz
 rviz2 -d src/mob_bot/config/camera_uncompressed.rviz
 ```
 
-<video src="https://github.com/mrithip/mob_bot/raw/main/assets/cam.mp4" width="100%" controls muted autoplay loop></video>
+![](https://github.com/mrithip/mob_bot/raw/main/assets/cam.mp4)
 
 **What you'll see:**
 - **Camera Image**: Live RGB camera feed
@@ -213,7 +213,7 @@ rviz2 -d src/mob_bot/config/camera_uncompressed.rviz
 # Launch simulation with depth camera enabled, then:
 rviz2 -d src/mob_bot/config/depth_cam.rviz
 ```
-<video src="https://github.com/mrithip/mob_bot/raw/main/assets/depthcam.mp4" width="100%" controls muted autoplay loop></video>
+![](https://github.com/mrithip/mob_bot/raw/main/assets/depthcam.mp4)
 
 **What you'll see:**
 - **Depth Cloud**: Point cloud from depth sensor
